@@ -1,19 +1,26 @@
 import React from "react";
-import Circle from "./Circle";
-import './index.css';
-import Triangle from "./Triangle";
-import Square from"./Square";
-import Perimeter from "./Perimeter";
-import Hexagon from "./Hexagon";
-import Cylinder from "./Cylinder";
-import Cone from "./Cone";
-import Task3 from "./Task3";
+import ReactDOM from "react-dom";
+import Image from "./image";
+import Price from "./Price";
+import Description from"./Description";
+import Heading from "./Heading";
+import Button from "./Button";
+import AddButton from "./AddButton";
+import ProductHooks from "./ProductHooks";
 function App(){
   return(
-    <Task3/>
-   
+    <div className="first">  
     
+   <div>
+  <Heading/>
+    <Image /> 
+  </div>
+   <div className="side">
+   <ProductHooks/>
+   <Description />
+   <Button/>    
+  </div> 
+  </div>
   );
-
 }
 export default App;
